@@ -11,35 +11,38 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
+    title: '🚀 Your Next Skill Awaits',
+   Svg: require('@site/static/img/undraw_learning.svg').default,
+   description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+       Learn step by step with clear explanations, practical examples,
+        and a beginner-friendly approach designed to build real skills.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+  title: '🎯 Focus on What Matters',
+  Svg: require('@site/static/img/undraw_focus.svg').default,
+  description: (
+    <>
+      No distractions, no unnecessary complexity.
+      Focus only on learning the skills that truly matter,
+      with a clear and structured path.
+    </>
+  ),
+},
+
+ {
+  title: '✨ Learn by Doing',
+  Svg: require('@site/static/img/undraw_code_thinking.svg').default,
+  description: (
+    <>
+      Understand concepts through real examples and hands-on practice.
+      Learn not just theory, but how things actually work.
+    </>
+  ),
+},
+
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {

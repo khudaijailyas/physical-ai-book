@@ -1,4 +1,4 @@
-# Chapter 1: Foundations of Physical AI and Embodied Intelligence
+# part 1: Foundations of Physical AI and Embodied Intelligence
 
 ## Learning Objectives
 

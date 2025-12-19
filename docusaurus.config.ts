@@ -2,34 +2,34 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Master Physical AI & Humanoid Robotics',
+  tagline: 'Learn, Build, and Innovate with AI-Powered Robots',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true, 
   },
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  
+  url: 'https://khudaijailyas.github.io',
+  
+  
+  baseUrl: '/physical-ai-book/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+ 
+  
+  organizationName: 'khudaijailyas', 
+  projectName: 'physical-ai-book', 
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
+  
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -41,10 +41,10 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          
+        
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/khudaijailyas/physical-ai-book/tree/main/book/',
         },
         blog: {
           showReadingTime: true,
@@ -52,11 +52,10 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+            'https://github.com/khudaijailyas/physical-ai-book/edit/main/blog/',
+          
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -69,77 +68,57 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+   
+    image: 'img/physical-ai-social-card.png',
     colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
-    },
+  title: 'AI Spec Book',
+  logo: {
+    alt: 'AI Spec Logo',
+    src: 'img/logo.png',
+  },
+  items: [
+    { to: '/docs/physical-ai-introduction', label: 'Book', position: 'left' },
+    { to: '/blog', label: 'Blog', position: 'left' },
+    
+   
+  ],
+},
+
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
+  style: 'dark', 
+  links: [
+    {
+      title: 'Docs',
+      items: [
+        { label: 'Getting Started', to: '/docs/intro' },
+        { label: 'Spec-Kit Plus', href: 'https://github.com/panaversity/spec-kit-plus/' },
+        { label: 'Claude Code', href: 'https://www.claude.com/product/claude-code' },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
+    {
+      title: 'Community',
+      items: [
+        { label: 'Instagram', href: 'https://www.instagram.com/khudaija._.ilyas?igsh=MWl3d2lvYjZwNXRrMg==' },
+        { label: 'Discord', href: 'https://discord.gg/zRHbwn57' },
+        { label: 'Linkdin', href: 'https://www.linkedin.com/in/khudaija-ilyas-8a09a22b8' },
+      ],
+    },
+    {
+      title: 'More',
+      items: [
+        { label: 'Blog', to: '/blog' },
+        { label: 'GitHub', href: 'https://github.com/khudaijailyas/physical-ai-book' },
+      ],
+    },
+  ],
+  copyright: `© ${new Date().getFullYear()} Khudaija Ilyas. Built with Docusaurus.`,
+},
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,

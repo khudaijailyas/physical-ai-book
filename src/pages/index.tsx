@@ -9,25 +9,38 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
+
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    
+<header className={clsx('hero hero--primary', styles.heroBanner)}>
+
+
+
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          🚀 Your Next Skill Awaits
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+        <p className="hero__subtitle">
+          A simple, clear, and beginner-friendly book to help you learn
+          step by step — without confusion or overload.
+        </p>
+        
+
+
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/physical-ai-introduction">
+            ✨ Begin Your Learning Journey
           </Link>
         </div>
       </div>
     </header>
   );
 }
+
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
