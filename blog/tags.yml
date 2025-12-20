@@ -5,3 +5,7 @@ AI:
 Robotics:
   label: Robotics
   description: Posts related to Robotics
+
+Education:
+  label: Education
+  permalink: Posts related to Education
