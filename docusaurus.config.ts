@@ -18,7 +18,7 @@ const config: Config = {
   url: 'https://khudaijailyas.github.io',
   
   
-  baseUrl: '/physical-ai-book',
+  baseUrl: '/',
 
  
   
